@@ -155,6 +155,8 @@ body, ol, ul, h1, h2, h4, h5, h6, p {
     text-align: center;
     color: #FFFFFF;
     opacity: 0.7;
+    margin-bottom: 28px;
+    margin-top: 
 }
 
 #hero .content h1{
@@ -166,6 +168,7 @@ body, ol, ul, h1, h2, h4, h5, h6, p {
     text-align: center;
     color: #FFFFFF;
     margin: 0 150px;
+    margin-bottom: 32px;
 }
 
 #hero .content .getting-started {
@@ -871,4 +874,185 @@ footer .sosmed img{
     padding: 12px;
     border-radius: 8px;
     background: #EAEBEC;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        /* Container Width + Gutter */
+        width:100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .col{
+        margin: 0px;
+    }
+
+    /* Navbar */
+    #navbar {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        position: absolute;
+        width: 600px;
+    }
+
+    #navbar .container{
+        justify-content: space-between;
+    }
+
+    #navbar .logo {
+        padding: 0 12px;
+    }
+
+    #navbar .logo img {
+        height: 60px;
+        width: auto;
+    }
+
+    #navbar .menu{
+        display: none;
+    }
+
+    #navbar .button{
+        display: none;
+    }
+
+    /* Hero Section */
+    #hero{
+        background-color: #0D1728;
+        height: 1276px;
+    }
+
+    #hero .content {
+        margin-top: 191px;
+    }
+
+    #hero .content p{
+        font-family: 'Anybody';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+        opacity: 0.7;
+        margin-bottom: 28px;
+        margin-top: 
+    }
+
+    #hero .content h1{
+        font-family: 'Anybody';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 138%;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 32px;
+    }
+
+    #hero .content img{
+        width: 100%;
+    }
+
+    #hero .content .getting-started {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 70px;
+        border: 1px solid #ffffff;
+        border-radius: 1000px;
+    }
+
+    #hero .content .getting-started form{
+        display: flex;
+        width: 100%;
+        margin: 0;
+    }
+
+    #hero .content .getting-started input{
+        padding: 32px 48px;
+        font-family: 'Anybody';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 19px;
+        color: #FFFFFF;
+        background: transparent;
+        border: 0;
+        flex-grow: 1;
+    }
+
+    #hero .content .getting-started input:focus{
+        outline: none;
+
+        border: 1px;
+    }
+
+    #hero .content .getting-started button{
+        background: white;
+        padding: 30px 38px;
+        font-family: 'Anybody';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 21px;
+        color: #293241;
+        border: 0;
+        border-radius: 1000px;
+    }
+
+    #hero .content .getting-started button:hover{
+        background: yellow;
+    }
+
+    /* Section Costumer */
+    #costumer .container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    /* Section work */
+    #work .container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    /* Section Analysis */
+    #analysis .container {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    #analysis .card {
+        width: 100%;
+    }
+
+    /* Section grafik */
+    #grafik .container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #grafik img {
+        width: 100%;
+    }
+
+    /* Section pricing */
+    #pricing .container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    /* Section testimonial */
+    #testimonial .container .slider {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    /* Section free-trial */
+    #free-trial .container img {
+        width: 100%;
+    }
 }
